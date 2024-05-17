@@ -9,7 +9,7 @@ export default defineConfig({
   factory: [
     {
       name: "fnStore",
-      use: [loadFnStore(), loadFnMeta()],
+      use: [loadFnStore(), loadFnPackages()],
       machine: createFn as any,
     },
   ],
@@ -26,7 +26,7 @@ function loadFnStore() {
   };
 }
 
-function loadFnMeta() {
+function loadFnPackages() {
   return async (_: Ctx) => {
     const _module = await import(path.join(process.cwd(), "src/fnStore/packages.json"), {
       assert: { type: "json" },
