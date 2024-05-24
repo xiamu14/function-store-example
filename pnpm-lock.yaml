@@ -11,6 +11,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      codegem-plugin-fnstore:
+        specifier: ^0.0.3
+        version: 0.0.3
       next:
         specifier: 14.2.3
         version: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -481,6 +484,9 @@ packages:
   clsx@2.1.1:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
+
+  codegem-plugin-fnstore@0.0.3:
+    resolution: {integrity: sha512-bhnosuQPU3cXUhqhT2aPmy7EgJOEntnBevZgFTvwPBy/PNiisMbACgWXbMfKNVdQWu9diaqUpmyzgLdltS8Atg==}
 
   codegem-tools@0.1.1-alpha.1:
     resolution: {integrity: sha512-4eqGvkyoAv2OzVO0/4ZEN5VMBrDj6nkT92NOYMmEVrSivXEJzzJepYrzdmZthUv8+pvYeSVgF+6EAvHUu/Zi/w==}
@@ -2051,6 +2057,10 @@ snapshots:
   client-only@0.0.1: {}
 
   clsx@2.1.1: {}
+
+  codegem-plugin-fnstore@0.0.3:
+    dependencies:
+      fs-extra: 11.2.0
 
   codegem-tools@0.1.1-alpha.1: {}
 
